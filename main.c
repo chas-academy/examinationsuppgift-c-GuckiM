@@ -38,7 +38,7 @@ int main () {
         formatName(s[i].name);
     }
 
-    double totalAverage = totalSum / 5.0;
+    
 
     // Finding the best student
     int bestId = 0;
@@ -51,6 +51,9 @@ int main () {
     printf("%s\n", s[bestId].name);
 
     // Find the students with below average scores
+
+    double totalAverage = totalSum / 5.0;
+
     for (int i = 0; i < 5; i++) {
         if (s[i].average < totalAverage) {
             printf("%s\n", s[i].name);
